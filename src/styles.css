@@ -4,6 +4,7 @@
 
 body {
     position: relative;
+    height: 100vh;
     background: linear-gradient(RGB(42,45,50), RGB(3,3,3));
     background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;
@@ -121,7 +122,7 @@ body {
 
 .bloc-about:hover::before {
     top: -1px;
-    left: -0.3px;
+    left: -0.6px;
     background: linear-gradient(358.68deg, rgb(13, 13, 15) -267.71%, rgba(37, 43, 55, 1) 296.12%) padding-box,
                 linear-gradient(0deg, rgb(185, 185, 185), rgb(178,48,38)) border-box;
     border: 0.5px solid transparent;
@@ -215,7 +216,7 @@ body {
 
 .bloc-project:hover::before {
     top: -1px;
-    left: -0.3px;
+    left: -0.6px;
     background: linear-gradient(358.68deg, rgb(13, 13, 15) -267.71%, rgba(37, 43, 55, 1) 296.12%) padding-box,
                 linear-gradient(0deg, rgb(185, 185, 185), rgb(178,48,38)) border-box;
     border: 0.5px solid transparent;
@@ -278,7 +279,7 @@ body {
     stroke: #fff;
 }
 
-.bloc-3d {
+/* .bloc-3d {
     position: relative;
     width: 18px;
     height: 18px;
@@ -287,9 +288,9 @@ body {
     text-align: center;
     cursor: pointer;
     background: linear-gradient(358.68deg, rgb(13, 13, 15) -267.71%, rgba(37, 43, 55, 1) 296.12%);
-}
+} */
 
-.bloc-3d::before {
+/* .bloc-3d::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -304,7 +305,7 @@ body {
 
 .bloc-3d:hover::before {
     top: -1px;
-    left: -0.3px;
+    left: -0.6px;
     background: linear-gradient(358.68deg, rgb(13, 13, 15) -267.71%, rgba(37, 43, 55, 1) 296.12%) padding-box,
                 linear-gradient(0deg, rgb(185, 185, 185), rgb(178,48,38)) border-box;
     border: 0.5px solid transparent;
@@ -345,8 +346,8 @@ body {
 
     }
     to {
-        width: 22px;
-        height: 11px;
+        width: 20px;
+        height: 10px;
         left: -10%;
         padding-top: 2px;
         border-radius: 2px;
@@ -366,7 +367,7 @@ body {
 
 .i-3d svg:hover {
    stroke: #ffffff;
-}
+} */
 
 /* contact icon / animation */
 
@@ -396,7 +397,7 @@ body {
 
 .bloc-contact:hover::before {
     top: -1px;
-    left: -0.3px;
+    left: -0.6px;
     background: linear-gradient(358.68deg, rgb(13, 13, 15) -267.71%, rgba(37, 43, 55, 1) 296.12%) padding-box,
                 linear-gradient(0deg, rgb(185, 185, 185), rgb(178,48,38)) border-box;
     border: 0.5px solid transparent;
@@ -475,9 +476,9 @@ body {
     height: 9px;
     background: rgba(255, 255, 255, 0.678);
     filter: blur(5px);
-}
+} */
 
-.glow-white-c {
+ .glow-white-c { 
     position: absolute;
     top: 6px;
     left: 88.5%;
@@ -492,7 +493,7 @@ body {
 
 .container-card {
     position: relative;
-    max-width: 270px;
+    max-width: 261px;
     text-align: center;
     margin: 0 auto;
     margin-top: 50px;
@@ -500,7 +501,7 @@ body {
 }
 
 .card {
-    left: 46px;
+    left: 13%;
     top: 2px;
     opacity: 1;
    
@@ -588,20 +589,21 @@ body {
     font-size: 5px;
 }
 
-.red {
-    position: absolute;
-    top: 232px
+.wave {
+position: absolute;
+top:260px;
 }
 
-.black {
-    position: absolute;
-    top: 250px
-}
+
+/* line */
+
+
 
 /* small card */
 
 .container-sm-card {
-    margin: 90px auto;
+    
+    margin: 60px auto;
     display: flex;
     max-width: 360px;
     justify-content: space-around;
@@ -609,7 +611,7 @@ body {
 
 .card-project {
     position: relative;
-    width: 131px;
+    width: 130px;
     height: 70px;
     background: linear-gradient(45deg,rgb(40,16,13), rgb(255,255,255),rgb(119,35,27));
     border-radius: 11px;
@@ -659,4 +661,82 @@ body {
     position: absolute;
     top: 35%;
     left: 27px;
+}
+
+.bloc-text :nth-child(1) {
+    top: 9px;
+    font-size: 12px;
+    left:40%;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1px;
+}
+
+.bloc-text :nth-child(2) {
+    font-size: 6px;
+    color: #b4b4b4;
+    text-align: center;
+    width: 72px;
+    top: 34px;
+    left: 40%;
+}
+
+.nbr-project {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    bottom: 3px;
+    left: 36%;
+}
+
+#icon-nbr {
+    width: 20px;
+}
+
+#nbr {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    color: #c0c0c0fa;
+    font-size: 5px;
+    width: 50px;
+}
+
+.bloc-text-2 :nth-child(1) {
+    top: -16px;
+    font-size: 12px;
+    width: 40px;
+    left:39px;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1px;
+}
+
+.bloc-text-2 :nth-child(2) {
+    font-size: 6px;
+    color: #b4b4b4;
+    text-align: center;
+    width: 72px;
+    top: 10px;
+    left: 100%;
+}
+
+.nbr-3D {
+   width: 65px;
+   bottom: -16px;
+   display: flex;
+    align-items: center;
+    justify-content: start;
+    left: 88%;
+}
+
+/* big-line */
+
+.line-top {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(-45deg, rgb(160, 44, 34), rgb(255,255,255));
+}
+
+.mid {
+    height: 12px;
+    background: rgb(26, 27, 30);
 }
