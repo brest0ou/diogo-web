@@ -1,5 +1,6 @@
 *{
     color: #fff;
+    
 }
 
 body {
@@ -15,6 +16,10 @@ body {
 
 .absolute {
     position: absolute;
+}
+
+.josefin {
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .glow-bd-top {
@@ -619,13 +624,14 @@ top:260px;
 }
 
 .card-project img {
-    width: 80px;
+    object-fit: cover;
+    width: 45px;
     height: 68px;
     margin: 1px 0px 1px 1px;
     border-radius: 11px 0px 0px 11px;
 }
 
-.card-3D {
+/* .card-3D {
     position: relative;
     width: 131px;
     height: 70px;
@@ -638,7 +644,7 @@ top:260px;
     height: 68px;
     margin: 1px 0px 1px 1px;
     border-radius: 11px 0px 0px 11px;
-}
+} */
 
 .trsp {
     position: absolute;
@@ -737,6 +743,89 @@ top:260px;
 }
 
 .mid {
-    height: 12px;
+    height: 18px;
     background: rgb(26, 27, 30);
+}
+
+.mid h2 {
+    padding-top: 2.5px;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.line-bot {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(-45deg, rgb(160, 44, 34), rgb(255,255,255));
+}
+
+/* card compétence */
+
+.container-card-cpt {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 310px;
+    margin: auto;
+    padding-top: 40px;
+    text-align: center;
+    gap: 10px;
+}
+
+.card-ref {
+    width: 149px;
+    height: 70px;
+    border-radius: 7px;
+    
+    background: linear-gradient(120deg, rgb(10, 10, 11,100%), rgb(37, 42, 53, 70%));
+} 
+
+.cont-ref {
+    display:flex;
+    width: 141px;
+    margin: auto;
+    
+
+    
+}
+
+.cont-ref :nth-child(1) {
+    font-size: 13px;
+    letter-spacing: 1px;
+    
+}
+
+.card-ref :nth-child(2) {
+    letter-spacing: 1px;
+    font-size: 8px;
+    margin: auto;
+    width: 141px;
+}
+
+.cont-res {
+    display: flex;
+    width: 141px;
+    margin: auto;
+    align-items: center;
+    
+}
+
+.card-res {
+    width: 149px;
+    height: 70px;
+    border-radius: 7px;
+
+    background: linear-gradient(120deg, rgb(10, 10, 11,100%), rgb(37, 42, 53, 70%));
+}
+
+.cont-res :nth-child(1) {
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.card-res :nth-child(2) {
+    letter-spacing: 1px;
+    font-size: 8px;
+    margin: auto;
+    width: 141px;
 }
