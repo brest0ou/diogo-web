@@ -5,7 +5,7 @@
 
 body {
     position: relative;
-    height: 100vh;
+    height: 200vh; /* à changer */
     background: linear-gradient(RGB(42,45,50), RGB(3,3,3));
     background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;
@@ -608,7 +608,7 @@ top:260px;
 
 .container-sm-card {
     
-    margin: 60px auto;
+    margin: 30px auto;
     display: flex;
     max-width: 360px;
     justify-content: space-around;
@@ -616,20 +616,22 @@ top:260px;
 
 .card-project {
     position: relative;
-    width: 130px;
-    height: 70px;
+    width: 170px;
+    height: 100px;
     background: linear-gradient(45deg,rgb(40,16,13), rgb(255,255,255),rgb(119,35,27));
     border-radius: 11px;
     
 }
 
 .card-project img {
-    object-fit: cover;
-    width: 45px;
-    height: 68px;
+    object-fit:cover;
+    width: 168px;
+    height: 98px;
     margin: 1px 0px 1px 1px;
-    border-radius: 11px 0px 0px 11px;
+    border-radius: 11px 11px 11px 11px;
 }
+
+
 
 /* .card-3D {
     position: relative;
@@ -648,42 +650,48 @@ top:260px;
 
 .trsp {
     position: absolute;
-    width: 12px;
-    height: 68px;
-    background: #1b1e2562;
+    width: 133px;
+    height: 98px;
+    background: #1b1e25e3;
     top:1px;
     left: 36px;
-    border-radius: 6px 0px 0px 6px;
+    border-radius: 12px 10px 10px 12px;
     
 }
 
-.front-black {
-    position: absolute;
-    top: 1px;
-    left: 29%;
-}
 
 .icon-p {
     position: absolute;
-    top: 35%;
-    left: 27px;
+    top: 37%;
+    left: 16px;
+}
+
+.icon-p svg {
+    width: 30px;
+    height: 30px;
 }
 
 .bloc-text :nth-child(1) {
     top: 9px;
     font-size: 12px;
-    left:40%;
+    left:42%;
     font-family: 'Josefin Sans', sans-serif;
     letter-spacing: 1px;
 }
 
 .bloc-text :nth-child(2) {
-    font-size: 6px;
+    font-size: 8px;
     color: #b4b4b4;
     text-align: center;
-    width: 72px;
-    top: 34px;
-    left: 40%;
+    width: 90px;
+    top: 42px;
+    left: 35%;
+}
+
+.nbr-project :nth-child(2) {
+    font-size: 6px;
+    top: 2.5px;
+    left: 34.5px;
 }
 
 .nbr-project {
@@ -694,6 +702,7 @@ top:260px;
     left: 36%;
 }
 
+
 #icon-nbr {
     width: 20px;
 }
@@ -701,10 +710,10 @@ top:260px;
 #nbr {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.5px;
     color: #c0c0c0fa;
-    font-size: 5px;
-    width: 50px;
+    font-size: 7px;
+    width: 70px;
 }
 
 .bloc-text-2 :nth-child(1) {
@@ -750,7 +759,7 @@ top:260px;
 .mid h2 {
     padding-top: 2.5px;
     text-align: center;
-    font-size: 12px;
+    font-size: 14.5px;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -762,17 +771,81 @@ top:260px;
 
 /* card compétence */
 
-.container-card-cpt {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
+.big-bloc {
+    position: relative;
     max-width: 310px;
     margin: auto;
+}
+
+.container-card-cpt {
+    position: absolute;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
     padding-top: 40px;
     text-align: center;
-    gap: 10px;
+    gap: 12px;
+    top: 0px;
+    left: 0px;
+}
+
+.cont-blur-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 45px;
+    gap: 20px;
+    row-gap: 68px;
+}
+
+.blur-white-1 {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    filter: blur(11px);
+}
+
+.blur-white-2 {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    filter: blur(11px);
+}
+
+.blur-white-3 {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    filter: blur(11px);
+}
+
+.blur-white-4 {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    filter: blur(11px);
+}
+
+.blur-white-5 {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    filter: blur(11px);
+}
+
+.blur-white-6 {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+    filter: blur(11px);
 }
 
 .card-ref {
+    
     width: 149px;
     height: 70px;
     border-radius: 7px;
@@ -784,15 +857,12 @@ top:260px;
     display:flex;
     width: 141px;
     margin: auto;
-    
-
-    
+    align-items: center;
 }
 
 .cont-ref :nth-child(1) {
     font-size: 13px;
     letter-spacing: 1px;
-    
 }
 
 .card-ref :nth-child(2) {
@@ -800,14 +870,6 @@ top:260px;
     font-size: 8px;
     margin: auto;
     width: 141px;
-}
-
-.cont-res {
-    display: flex;
-    width: 141px;
-    margin: auto;
-    align-items: center;
-    
 }
 
 .card-res {
@@ -818,9 +880,12 @@ top:260px;
     background: linear-gradient(120deg, rgb(10, 10, 11,100%), rgb(37, 42, 53, 70%));
 }
 
-.cont-res :nth-child(1) {
-    font-size: 13px;
-    letter-spacing: 1px;
+.cont-res {
+    display: flex;
+    width: 141px;
+    margin: auto;
+    align-items: center;
+    
 }
 
 .card-res :nth-child(2) {
@@ -828,4 +893,135 @@ top:260px;
     font-size: 8px;
     margin: auto;
     width: 141px;
+}
+
+.cont-res :nth-child(1) {
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.card-bdd {
+    width: 149px;
+    height: 70px;
+    border-radius: 7px;
+
+    background: linear-gradient(120deg, rgb(10, 10, 11,100%), rgb(37, 42, 53, 70%));
+}
+
+.cont-bdd {
+    display: flex;
+    width: 141px;
+    margin: auto;
+    align-items: center;
+    
+}
+
+.cont-bdd :nth-child(1) {
+    font-size: 13px;
+    letter-spacing: 1px;
+    
+}
+
+.card-bdd :nth-child(2) {
+    font-size: 7px;
+    color: #FFB03A;
+    margin: 0px 0px 4px 0px;
+}
+
+.card-bdd :nth-child(3) {
+    letter-spacing: 1px;
+    font-size: 8px;
+    margin: auto;
+    width: 141px;
+}
+
+
+.card-front {
+    width: 149px;
+    height: 70px;
+    border-radius: 7px;
+
+    background: linear-gradient(120deg, rgb(10, 10, 11,100%), rgb(37, 42, 53, 70%));
+}
+
+.cont-front {
+    display: flex;
+    width: 141px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-front p {
+    letter-spacing: 1px;
+    font-size: 8px;
+    margin: auto;
+    width: 141px;
+    padding-top: 6px;
+}
+
+.cont-front :nth-child(1) {
+    font-size: 13px;
+    width: 80px;
+    letter-spacing: 1px;
+    
+}
+
+.card-back {
+    width: 149px;
+    height: 70px;
+    border-radius: 7px;
+
+    background: linear-gradient(120deg, rgb(10, 10, 11,100%), rgb(37, 42, 53, 70%));
+}
+
+.cont-back {
+    display: flex;
+    width: 141px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.card-back p {
+    letter-spacing: 1px;
+    font-size: 8px;
+    margin: auto;
+    width: 141px;
+    padding-top: 6px;
+}
+
+.cont-back :nth-child(1) {
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.card-webd {
+    width: 149px;
+    height: 80px;
+    border-radius: 7px;
+
+    background: linear-gradient(120deg, rgb(10, 10, 11,100%), rgb(37, 42, 53, 70%));
+}
+
+.cont-webd {
+    display: flex;
+    width: 141px;
+    margin: auto;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-webd p {
+    letter-spacing: 1px;
+    font-size: 8px;
+    margin: auto;
+    width: 141px;
+    padding-top: 2px;
+}
+
+.cont-webd :nth-child(1) {
+    font-size: 13px;
+    letter-spacing: 1px;
 }
